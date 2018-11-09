@@ -7,9 +7,9 @@ void setup()
   }
   void draw()
   {
-    for(int y = 50; y <= 450; y += 50) {
-      for(int x = 50; x <= 450; x += 50) {
-        Die pop = new Die(50,50);
+    for(int y = 50; y <= 450; y += 90) {
+      for(int x = 50; x <= 450; x += 90) {
+        Die pop = new Die(x,y);
         pop.show();
       }
     }
@@ -26,8 +26,8 @@ void setup()
       Die(int x, int y) //constructor
       {
         roll();
-        myX = x;
-        myY = y;
+        this.myX = x;
+        this.myY = y;
       }
       void roll()
       {
@@ -49,7 +49,7 @@ void setup()
       {
           noStroke();
           fill(225,225,225);
-          rect(50,50,50,50);
+          rect(myX,myY,50,50);
           fill(0);
           if (d1 == true) {
             ellipse(myX*1.5, myY*1.5, 5, 5);
@@ -81,4 +81,3 @@ void setup()
           }
       }
   }
-  
