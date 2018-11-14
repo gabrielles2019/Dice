@@ -1,3 +1,7 @@
+/* Dice by Gabby S
+* For CS 11
+*/
+
 void setup() {
       size(500,500);
       noLoop();
