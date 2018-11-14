@@ -31,17 +31,17 @@ void setup() {
       }
       void roll()
       {
-      if ((int)(Math.random()*7)+1 < 2) {
+      if ((int)(Math.random()*6)+1 < 2) {
         d1 = 1;
-      } else if ((int)(Math.random()*7)+1 < 3) {
+      } else if ((int)(Math.random()*6)+1 < 3) {
         d2 = true;
-      } else if ((int)(Math.random()*7)+1 < 4) {
+      } else if ((int)(Math.random()*6)+1 < 4) {
         d3 = true;
-      } else if ((int)(Math.random()*7)+1 < 5) {
+      } else if ((int)(Math.random()*6)+1 < 5) {
         d4 = true;
-      } else if ((int)(Math.random()*7)+1 < 6) {
+      } else if ((int)(Math.random()*6)+1 < 6) {
         d5 = true;
-      } else if ((int)(Math.random()*7)+1 < 7) {
+      } else if ((int)(Math.random()*6)+1 < 7) {
         d6 = true;
       }
   }
