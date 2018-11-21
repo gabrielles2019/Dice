@@ -8,9 +8,9 @@ void setup() {
   }
   
   void draw() {
+    background(200);
     int total = 0;
     fill(0);
-    text("You rolled: "+ total,215, 25);
     for(int y = 50; y <= 450; y += 90) {
       for(int x = 50; x <= 450; x += 90) {
         Die pop = new Die(x,y);
@@ -18,6 +18,7 @@ void setup() {
         total += pop.value;
       }
     }
+    text("You rolled: "+ total,215, 25);
   }
   void mousePressed()
   {
@@ -36,7 +37,7 @@ void setup() {
       }
       void roll()
       {
-      int value = ((int)(Math.random()*6)+1); //{1,2,3,4,5,6}
+      value = ((int)(Math.random()*6)+1); //{1,2,3,4,5,6}
         
   }
       void show() {
